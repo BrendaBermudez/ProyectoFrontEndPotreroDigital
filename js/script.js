@@ -41,25 +41,25 @@ function GeneraForm() {
   
 
   // ASIGNAR ATRIBUTOS AL OBJETO CAJA DE TEXTO DE NOMBRES
-
+  cajaNombres.setAttribute('class', "formText");
   cajaNombres.setAttribute('type', "text"); //Asignar el atributo type
   cajaNombres.setAttribute('placeholder', "Escribi tu nombre aquí:") // Asignar el atributo placeholder
   cajaNombres.setAttribute('style', "width:100%;");//Asignar el atributo style
 
   // ASIGNAR ATRIBUTOS AL OBJETO CAJA DE TEXTO DE APELLIDOS
-
+  cajaApellidos.setAttribute('class', "formText");
   cajaApellidos.setAttribute('type', "text") //Asignar el atributo type
   cajaApellidos.setAttribute('placeholder', "Escribi tu apellido aquí:") // Asignar el atributo placeholder
   cajaApellidos.setAttribute('style', "width:100%;"); //Asignar el atributo style
 
   // ASIGNAR ATRIBUTOS AL OBJETO CAJA DE TEXTO DE CORREO
-
+  cajaCorreo.setAttribute('class', "formText");
   cajaCorreo.setAttribute('type', "text");//Asignar el atributo type
   cajaCorreo.setAttribute('placeholder', "Email");//Asignar el atributo placeholder
   cajaCorreo.setAttribute('style', "width:100%;");//Asignar el atributo style
 
   // ASIGNAR ATRIBUTOS AL OBJETO CAJA DE TEXTO DE Asunto
-
+  cajaAsunto.setAttribute('class', "formText");
   cajaAsunto.setAttribute('type', "text");//Asignar el atributo type
   cajaAsunto.setAttribute('placeholder', "Asunto");//Asignar el atributo placeholder
   cajaAsunto.setAttribute('style', "width:100%");//Asignar el atributo style
@@ -70,6 +70,7 @@ function GeneraForm() {
   cajaMensaje.setAttribute('style', "width:100%;");//Asignar el atributo style
 
   // ASIGNAR ATRIBUTOS AL OBJETO BOTON
+
   boton.setAttribute('type', "button");//Asignar el atributo type
   boton.setAttribute('value', "Enviar");//Asignar el atributo value
   boton.setAttribute('style', "width:24vw;margin: 10px 0px;padding: 10px;background:#faa765b5;color:#444444;border:solid 1px #000;");//Asignar el atributo style
@@ -85,9 +86,20 @@ function GeneraForm() {
   formulario.appendChild(boton);//Agregar el objeto boton al objeto formulario
 
   document.getElementById("contenido-formulario").appendChild(formulario); //Agregar el formulario a la etiquete con el ID
+
 }
 
 
+function hide(){
+    document.getElementById("botonForm").style.display="none";
+    document.getElementById("instrucciones").style.display="none";
+}
+
+
+function GeneraryOcultar(){
+  GeneraForm();
+  hide();
+}
 // SLIDER CONOCENOS
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
