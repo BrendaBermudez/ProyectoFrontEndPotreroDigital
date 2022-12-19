@@ -297,6 +297,9 @@ form{
     
 }
 
+/* .instrucciones{
+    display:block;
+} */
 textarea{
     height: 10vh;
     margin: auto;
@@ -367,7 +370,6 @@ footer p{
 
 .container-slider{
     width: 100vw;
-    max-width: 900px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -434,7 +436,7 @@ footer p{
     }
 
     .main-logo {
-        flex-basis: 55%;
+        flex-basis: 45%;
     }
 
     .main-nav {
@@ -504,4 +506,28 @@ footer p{
         font-size: 1.5rem;
     }
    
+}
+@media screen and (min-width: 1024px){
+    .link-item{
+        font-size: 1.7rem;
+    }
+    .main-logo{
+        font-size: 2rem;
+    }
+    .contenido {
+        font-size: 2rem;
+    }
+    .main_tips p {
+        font-size: 1.7rem;
+    }
+    .main_tips strong {
+        font-size: 2.25rem;
+    }
+
+    button {
+        font-size: 1.33rem;
+    }
+    .formText{
+        height: 5vh;
+    }
 }
